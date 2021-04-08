@@ -8,6 +8,10 @@ class Receptionist {
 	String recepPassword
 	String recepPhone
 
+	String toString(){
+	return recepName
+	}
+
     static constraints = {
 	recepName nullable:false, blank:false
 	recepEmail nullable:false, blank:false, email:true
@@ -15,4 +19,6 @@ class Receptionist {
 	recepPassword nullable:false, blank:false
 	recepPhone nullable:false, blank:false
     }
+
+static belongsTo = [surgery:Surgery]
 }

@@ -10,6 +10,10 @@ class Surgery {
 	String description
 	String openingTime
 
+	String toString(){
+	return name
+	}
+
     static constraints = {
 	name nullable:false, blank:false
 	address nullable:false, blank:false
@@ -19,4 +23,8 @@ class Surgery {
 	description nullable:false, blank:false, widget:'textarea'
 	openingTime nullable:false, blank:false
     }
+
+static hasMany = [nurses:Nurse, patients:Patient, receptionists:Receptionist, doctors:Doctor]
+
+static belongsTo = [doctors:Doctor]
 }

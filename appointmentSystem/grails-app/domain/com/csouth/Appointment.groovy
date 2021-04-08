@@ -2,10 +2,15 @@ package com.csouth
 
 class Appointment {
 
+	String appID	
 	Date appDate
 	String appTime
 	int appDuration
 	String roomNumber
+
+	String toString(){
+	return appID
+	}
 
     static constraints = {
 
@@ -15,4 +20,6 @@ class Appointment {
 	roomNumber nullable:false, blank:false
 	
     }
+
+static belongsTo = [patient:Patient, doctor:Doctor]
 }
