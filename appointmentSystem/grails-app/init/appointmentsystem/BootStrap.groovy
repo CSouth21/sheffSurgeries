@@ -42,7 +42,7 @@ class BootStrap {
 		nurseName: 'Shannon',
 		qualifications: 'First Class degree',
 		nurseEmail: 'shannon@sheffsurgeries.com',
-		nurseOffice: 'Cantor',
+		nurseOffice: 'B-103',
 		nursePhone: '01141111111',
 		surgery: surgery1).save() 
 
@@ -50,17 +50,17 @@ class BootStrap {
 		nurseName: 'Amy',
 		qualifications: 'First Class degree',
 		nurseEmail: 'amy@sheffsurgeries.com',
-		nurseOffice: 'Cantor',
+		nurseOffice: 'B-105',
 		nursePhone: '01141111112',
 		surgery: surgery2).save() 
 
 	def marcelo = new com.csouth.Doctor(
 		fullName: 'Dr Marcelo Bielsa',
-		qualifcation: 'a good one',
+		qualifcation: 'PhD in Medicine',
 		position: 'GP',
 		doctorEmail: 'mbielsa@sheffsurgeries.com',
 		password: 'elloco',
-		doctorOffice: 'Cantor',
+		doctorOffice: 'A-101',
 		doctorPhone: '01131112222',
 		bio: '''insert here''',
 		nurses: shannon,
@@ -68,11 +68,11 @@ class BootStrap {
 
 	def steve = new com.csouth.Doctor(
 		fullName: 'Dr Steve Bruce',
-		qualifcation: 'a good one',
+		qualifcation: 'PhD in Medicine',
 		position: 'GP',
 		doctorEmail: 'sbruce@sheffsurgeries.com',
 		password: 'elkebab',
-		doctorOffice: 'Cantor',
+		doctorOffice: 'A-103',
 		doctorPhone: '01131112223',
 		bio: '''insert here''',
 		nurses: amy,
@@ -83,7 +83,7 @@ class BootStrap {
 		patientAddress: '123 Fake Street',
 		patientResidence: 'Sheffield',
 		patientDob: new Date('13/07/1997'),
-		patientID: '1111',
+		patientID: 'C1111',
 		dateRegistered: new Date('22/09/2018'),
 		patientPhone: '07123456789',
 		surgery: surgery1,
@@ -94,35 +94,35 @@ class BootStrap {
 		patientAddress: '123 Dave Street',
 		patientResidence: 'Sheffield',
 		patientDob: new Date('26/05/1993'),
-		patientID: '2222',
+		patientID: 'C2222',
 		dateRegistered: new Date('03/11/2013'),
 		patientPhone: '07123456784',
 		surgery: surgery2,
 		doctors: steve).save() 
 
 	def app1 = new com.csouth.Appointment(
-		appID: '100',
+		appID: 'A100',
 		appDate: new Date('10/04/2021'),
 		appTime: '11:00',
 		appDuration: 30,
-		roomNumber: '3',
+		roomNumber: 'B3',
 		patient: geoff,
 		doctor: marcelo,
 		surgery: surgery1).save()
 
 	def app2 = new com.csouth.Appointment(
-		appID: '200',
+		appID: 'A650',
 		appDate: new Date('26/04/2021'),
 		appTime: '15:00',
 		appDuration: 60,
-		roomNumber: '5',
+		roomNumber: 'D5',
 		patient: dave,
 		doctor: steve,
 		surgery: surgery2).save()
 
 	def pres1 = new com.csouth.Prescription(
 		pharmacyName: 'Medichem',
-		prescripNumber: '1234',
+		prescripNumber: 1234,
 		medicine: 'Ventolin',
 		totalCost: 8.50,
 		dateIssued: new Date('10/04/2021'),
@@ -132,7 +132,7 @@ class BootStrap {
 
 	def pres2 = new com.csouth.Prescription(
 		pharmacyName: 'Boots',
-		prescripNumber: '5678',
+		prescripNumber: 5678,
 		medicine: 'Budesonide',
 		totalCost: 9.99,
 		dateIssued: new Date('26/04/2021'),
