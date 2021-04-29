@@ -18,6 +18,7 @@
 
 <div class="row">
 	<asset:image src="sheffSurgeries2.PNG"/>
+	<g:loginToggle/>
 </div>
 
 <g:layoutBody/>
