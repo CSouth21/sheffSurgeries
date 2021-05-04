@@ -12,7 +12,7 @@
         <h1>Welcome to Sheff Surgeries</h1>
 
 
-        <p>Login Functionality coming soon</p>
+        <p>Please click one of the above login buttons to proceed</p>
     </section>
 </div>
 

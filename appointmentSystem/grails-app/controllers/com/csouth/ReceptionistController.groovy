@@ -23,4 +23,18 @@ class ReceptionistController {
 		session.user = null
 		redirect(uri:'/')
 	}
+
+	def Search() {
+		render view:'search'
+	}
+
+	def results(String name) {
+		def patients=Patient.where{
+			patientName=~name || patientID=~name || patientResidence=~name
+		}.list()
+		
+		return [patients:patients,
+			term:params.name,
+			totalPatients:Patient.count()]
+	}
 }
