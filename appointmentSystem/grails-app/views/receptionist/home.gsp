@@ -15,8 +15,9 @@
 <p>Use this page to register a new patient</p>
 	<button type="button" class="btn btwn-success">
 		<g:link controller="patient" action="create">Register</g:link>
-	</button>
+	</button> 
 </div>
+
 
 <div class="second">
 	<h3>Register Doctors</h3>
@@ -25,6 +26,7 @@
 		<g:link controller="doctor" action="create">Register</g:link>
 	</button>
 </div>
+</br>
 
 <div class="first">
 	<h3>Register Nurses</h3>
@@ -33,6 +35,7 @@
 		<g:link controller="nurse" action="create">Register</g:link>
 	</button>
 </div>
+</br>
 
 <div class="second">
 	<h3>Register Receptionists</h3>
@@ -41,7 +44,25 @@
 		<g:link controller="receptionist" action="create">Register</g:link>
 	</button>
 </div>
+</br>
 
+<div class="first">
+	<h3>Manage Patients</h3>
+<p>Use this page to manage patients and assign them to doctors</p>
+	<button type="button" class="btn btwn-success">
+		<g:link controller="patient" action="index">Manage</g:link>
+	</button>
+</div>
+</br>
+
+<div class="second">
+	<h3>Manage Doctors</h3>
+<p>Use this page to manage doctors and assign nurses to doctors</p>
+	<button type="button" class="btn btwn-success">
+		<g:link controller="doctor" action="index">Manage</g:link>
+	</button>
+</div>
+</br>
 
 </div>
 </div>
