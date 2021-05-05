@@ -46,6 +46,15 @@
 </div>
 </br>
 
+<div class="first">
+	<h3>Search Prescriptions</h3>
+<p>Use this page to search for prescriptions</p>
+	<button type="button" class="btn btwn-success">
+		<g:link controller="doctor" action="search">Search</g:link>
+	</button>
+</div>
+</br>
+
 
 </div>
 </div>

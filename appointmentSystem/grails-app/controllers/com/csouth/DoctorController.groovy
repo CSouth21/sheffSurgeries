@@ -23,4 +23,19 @@ class DoctorController {
 		session.user = null
 		redirect(uri:'/')
 	}
+
+	def Search() {
+		render view:'search'
+	}
+
+	def results(String name) {
+		def prescriptions=Prescription.where{
+			medicine=~name
+			
+		}.list()
+		
+		return [prescriptions:prescriptions,
+			term:params.name,
+			totalPrescriptions:Prescription.count()]
+	}
 }

@@ -68,7 +68,7 @@
 	<h3>Search Patients</h3>
 <p>Use this page to search for patients</p>
 	<button type="button" class="btn btwn-success">
-		<g:link controller="receptionist" action="search">Manage</g:link>
+		<g:link controller="receptionist" action="search">Search</g:link>
 	</button>
 </div>
 </br>

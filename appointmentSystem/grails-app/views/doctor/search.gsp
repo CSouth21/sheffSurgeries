@@ -9,9 +9,9 @@
 <div class="row">
 	
 	<formset>
-		<legend>Search for Patients</legend>
+		<legend>Search for Prescriptions</legend>
 		<g:form action="results">
-		<label for="name">Enter the patient name, ID or residence</label>
+		<label for="name">Enter the medicine name</label>
 			<g:textField name="name"/>
 			<g:submitButton name="search" value="Search" />
 		</g:form>
