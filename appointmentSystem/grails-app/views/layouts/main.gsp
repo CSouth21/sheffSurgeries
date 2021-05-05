@@ -18,8 +18,8 @@
 
 <div class="row">
 	<asset:image src="sheffSurgeries2.PNG"/>
-	<g:loginToggle/>
-	<g:doctorLoginToggle/>
+<!--	<g:loginToggle/>
+	<g:doctorLoginToggle/> -->
 </div>
 
 <g:layoutBody/>

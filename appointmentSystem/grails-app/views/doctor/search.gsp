@@ -2,9 +2,12 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
+    <asset:stylesheet src="home.css"/>
     <title>Sheff Surgeries | Search</title>
 </head>
 <body>
+
+<g:doctorLoginToggle/>
 
 <div class="row">
 	

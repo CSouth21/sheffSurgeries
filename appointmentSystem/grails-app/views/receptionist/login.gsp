@@ -2,10 +2,14 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
+    <asset:stylesheet src="home.css"/>
     <title>Sheff Surgeries Login</title>
 </head>
 <body>
 
+<div class="col">
+<g:doctorLoginToggle/>
+<h1>Receptionist Login</h1>
 <g:if test="${flash.message}">
  <div class="message">${flash.message}</div>
  </g:if>
@@ -35,5 +39,6 @@
           </td></tr>
       </table>
     </g:form>
+</div>
   </body>
 </html>

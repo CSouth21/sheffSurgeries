@@ -2,11 +2,14 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
+    <asset:stylesheet src="home.css"/>
     <title>Sheff Surgeries | Search</title>
 </head>
 <body>
 
-<div class="row">
+<g:loginToggle/>
+
+<div class="col">
 
 <h3>Search Results</h3>
 
@@ -23,7 +26,7 @@ id="${patient.id}">${patient.patientName}</g:link></li>
  </g:each>
  </ul>
 
-<button type="button" class="btn btn-success">
+<button type="button">
  <g:link action='search'>Search Again</g:link>
 </button>
 </div>
