@@ -19,7 +19,7 @@
  Found <strong>${prescriptions.size()}</strong> prescriptions.
  </p>
 
- <ul>
+ <ul class="col">
  <g:each var="prescription" in="${prescriptions}">
  <li><g:link controller="prescription" action="show"
 id="${prescription.id}">${prescription.prescripNumber}</g:link></li>

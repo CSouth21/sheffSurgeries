@@ -14,7 +14,7 @@
 	<formset>
 		<legend>Search for Prescriptions</legend>
 		<g:form action="results">
-		<label for="name">Enter the medicine name</label>
+		<label for="name">Enter the medicine name, cost or date issued</label>
 			<g:textField name="name"/>
 			<g:submitButton name="search" value="Search" />
 		</g:form>

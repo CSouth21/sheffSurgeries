@@ -4,7 +4,7 @@ class BootStrap {
 
     def init = { servletContext ->
 	
-	def surgery1 = new com.csouth.Surgery(
+/*	def surgery1 = new com.csouth.Surgery(
 		name: 'Kearsley Surgery',
 		address: '7 Kearsley Road',
 		postcode: 'S2 4TE',
@@ -140,7 +140,7 @@ class BootStrap {
 		dateIssued: new Date('26/04/2021'),
 		patientPaying: true,
 		doctor: steve,
-		patient: dave).save() 
+		patient: dave).save() */
 		
 
     }

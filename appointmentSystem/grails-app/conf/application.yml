@@ -112,11 +112,11 @@ environments:
     test:
         dataSource:
             dbCreate: update
-            url: 
+            url: jdbc:mysql://localhost:3306/sheffSurgeries_test
     production:
         dataSource:
             dbCreate: none
-            url: 
+            url: jdbc:mysql://localhost:3306/sheffSurgeries_prod
             properties:
                 jmxEnabled: true
                 initialSize: 5

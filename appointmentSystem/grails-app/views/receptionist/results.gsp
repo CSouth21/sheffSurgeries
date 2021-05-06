@@ -19,7 +19,7 @@
  Found <strong>${patients.size()}</strong> patients.
  </p>
 
- <ul>
+ <ul class="col">
  <g:each var="patient" in="${patients}">
  <li><g:link controller="patient" action="show"
 id="${patient.id}">${patient.patientName}</g:link></li>

@@ -17,7 +17,7 @@
 <body>
 
 <div class="row">
-	<asset:image src="sheffSurgeries2.PNG"/>
+	<asset:image src="sheffSurgeries2.PNG" class="col"/>
 <!--	<g:loginToggle/>
 	<g:doctorLoginToggle/> -->
 </div>

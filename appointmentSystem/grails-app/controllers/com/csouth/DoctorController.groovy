@@ -30,7 +30,7 @@ class DoctorController {
 
 	def results(String name) {
 		def prescriptions=Prescription.where{
-			medicine=~name
+			medicine=~name || totalCost.toString()=~name || dateIssued.toString()=~name
 			
 		}.list()
 		
